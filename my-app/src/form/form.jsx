@@ -25,7 +25,7 @@ class Form extends React.Component {
     render() { 
         const {todo} = this.state;
         return ( <div>
-            <form>
+            <form onSubmit={this.handleOnSubmit}>
                 <input type="text" 
                 name='todo'
                 id='todo'
